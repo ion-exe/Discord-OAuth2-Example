@@ -1,0 +1,15 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title><%- pageTitle %></title>
+
+<link rel="stylesheet" type="text/css" href="/style.css">
+
+<%- include('./partials/nav.ejs') %>
+<center><i><font size="6" color="red">A server you own not showing up? The bot has to be there too!</font></i></center><br>
+<% for ( g of servers) {%>
+            <img src="<%='https://cdn.discordapp.com/icons/'+g.id+'/'+g.icon+'.png' %>"><p class="header"><%= g.name %>
+              <button class="ui inverted grey button" style="background-color:grey;border-radius: 5px;height:50px;width:100px">
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="cog icon"></i> Manage</a></button></p>
+      <% } %>
+      
